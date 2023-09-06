@@ -1,0 +1,15 @@
+<main class="container" id="loginform">
+    <h2>Bienvenido!</h2>
+    <p>Enter your email and passwrod to login</p>
+    <form action="#">
+        <div class="form-floating mb-3">
+            <input type="email" placeholder="Email..." name="email" id="input_email" class="form-control">
+            <label for="input_email">Email</label>
+        </div>        
+        <div class="form-floating mb-3">
+            <input type="password" placeholder="Password..." name="pass" id="input_password" class="form-control">
+            <label for="input_password">Password</label>
+        </div>
+        <button (click)="login()" class="btn btn-primary">Login!</button>
+    </form>    
+</main>

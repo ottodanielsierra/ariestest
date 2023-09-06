@@ -1,0 +1,31 @@
+<main class="container" *ngIf="character">
+    <h1>{{ character.name }}</h1>
+    <img [src]="character.image" [alt]="character.image" class="rounded">
+    
+    <h4>Alternative Names:</h4>
+    <ul>
+        <li *ngFor="let name of character.alternate_names">{{name}}</li>
+    </ul>
+    
+    <h4>Species:</h4>
+    {{ character.species }}
+
+    <h4>House:</h4>
+    {{ character.house }}
+
+    <h4>Wizard:</h4>
+    {{ character.wizard }}
+
+    <h4>Ancestry:</h4>
+    {{ character.ancestry }}
+
+    <h4>Personal Info:</h4>
+    <b>Birth:</b> {{ character.dateOfBirth }}
+    <b>Eyes:</b> {{ character.eyeColour }}
+    <b>Hair:</b> {{ character.hairColour }}
+
+    <h4>Wand:</h4>
+    <b>Wood:</b> {{ character.wand.wood }} <br>
+    <b>Core:</b> {{ character.wand.core }} <br>
+    <b>Length:</b> {{ character.wand.length }} <br>    
+</main>
